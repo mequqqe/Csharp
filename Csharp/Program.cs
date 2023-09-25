@@ -5,16 +5,34 @@ namespace Lesson {
     {
         static void Main(string[] args)
         {
-            int a = int.Parse
-                (Console.ReadLine());
+            double firstValue, secondValue;
+            string action;
 
-            switch (a) 
+            Console.WriteLine("Введите число 1");
+            firstValue = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("ВВедите число 2");
+            secondValue = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Выберите операцию '+' '- '*' '/' ");
+            action = Console.ReadLine();
+
+            switch (action) 
             {
-                case 1:
-                    Console.WriteLine("Вы ввели 1");
+                case "+":
+                    Console.WriteLine(firstValue + secondValue);
                     break;
-                case 2:
-                    Console.WriteLine(" Вы ввели 2");
+                case "-":
+                    Console.WriteLine(firstValue - secondValue);
+                    break;
+                case "*":
+                    Console.WriteLine(firstValue / secondValue);
+                    break;
+                    case "/":
+                        Console.WriteLine(firstValue / secondValue);
+                    break;
+                default:
+                    Console.WriteLine("Ошибка");
                     break;
             }
         }
