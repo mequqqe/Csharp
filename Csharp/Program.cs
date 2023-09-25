@@ -5,11 +5,18 @@ namespace Lesson {
     {
         static void Main(string[] args)
         {
-            int a = 1;
+            int a = int.Parse
+                (Console.ReadLine());
 
-            a = a++ * a;
-
-            Console.WriteLine(a);
+            switch (a) 
+            {
+                case 1:
+                    Console.WriteLine("Вы ввели 1");
+                    break;
+                case 2:
+                    Console.WriteLine(" Вы ввели 2");
+                    break;
+            }
         }
 
     }
