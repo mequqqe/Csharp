@@ -5,13 +5,11 @@ namespace Lesson {
     {
         static void Main(string[] args)
         {
-            int count = 0;
-           
             int limit = int.Parse(Console.ReadLine());
-            while(count < limit) 
+
+            for (int i = 0; i < limit; i++)
             {
-                count++;
-                Console.WriteLine(count);
+                Console.WriteLine(i);
             }
         }
 
